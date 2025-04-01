@@ -1,9 +1,9 @@
-\documentclass[aspectratio=169,12pt]{beamer}
+\documentclass[aspectratio=169,12pt,xcolor=dvipsnames]{beamer}
 \usepackage{graphicx} % For including graphics.
 \usepackage{hyperref} % For links.
 \usepackage{multirow}
 
-\title{connascence}
+\title{\Huge connascence}
 \author{Jan Wedekind}
 \date{Wednesday, April 9th 2025}
 
@@ -21,6 +21,13 @@
 
 \usebackgroundtemplate{\includegraphics[width=\paperwidth,height=\paperheight]{slide}}
 
+\definecolor{Slidecolor}{rgb}{0.61,0.77,0.83}
+\setbeamercolor{titlelike}{fg=Black}
+\setbeamercolor{frametitle}{fg=Black,bg=Slidecolor!50}
+\setbeamercolor{section in head/foot}{bg=Black}
+\setbeamercolor{author in head/foot}{bg=Black}
+\setbeamercolor{date in head/foot}{fg=Black}
+
 \begin{document}
 
 \frame{\titlepage}
@@ -28,8 +35,8 @@
 \begin{frame}
   \frametitle{motivation}
   \begin{itemize}
-    \item Metric for software quality
-    \item Theoretical foundation for software engineering
+    \item metric for software design
+    \item theoretical foundation for software engineering
   \end{itemize}
 \end{frame}
 
@@ -77,5 +84,7 @@
 % examples for different kinds of connascence
 % examples of code transformation to a kind of connascence with reduced strength
 % strength, degree, and locality (modularity)
+
+% https://www.wedesoft.de/downloads/connascence.pdf
 
 \end{document}
