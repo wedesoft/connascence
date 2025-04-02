@@ -110,6 +110,26 @@ l = sqr(x) + sqr(y)
 \end{frame}
 
 \begin{frame}[fragile]
+  \pdfbookmark[2]{CoT}{cot}
+  \frametitle{connascence of type (CoT)}
+  \begin{center}
+    \begin{minipage}[c]{.65\textwidth}
+      \begin{minted}[bgcolor=black!10]{python}
+from datetime import datetime
+
+def date_to_isostring(date: datetime):
+    return date.strftime('%Y-%m-%d')
+      \end{minted}
+    \end{minipage}
+    \begin{minipage}[c]{.65\textwidth}
+      \begin{minted}[bgcolor=black!10]{python}
+date_to_isostring(datetime(2025, 4, 2))
+      \end{minted}
+    \end{minipage}
+  \end{center}
+\end{frame}
+
+\begin{frame}[fragile]
   \pdfbookmark[2]{CoM}{com}
   \frametitle{connascence of meaning (CoM)}
   \begin{center}
@@ -124,6 +144,45 @@ class Order:
       \begin{minted}[bgcolor=black!10]{python}
 if order.status == 2:
     print("Order was shipped.")
+      \end{minted}
+    \end{minipage}
+  \end{center}
+\end{frame}
+
+\begin{frame}[fragile]
+  \pdfbookmark[3]{CoP}{cop}
+  \frametitle{connascence of position (CoP)}
+  \begin{center}
+    \begin{minipage}[c]{.5\textwidth}
+      \begin{minted}[bgcolor=black!10]{python}
+def imwrite(filename, image):
+    # ...
+      \end{minted}
+    \end{minipage}
+    \begin{minipage}[c]{.5\textwidth}
+      \begin{minted}[bgcolor=black!10]{python}
+imwrite('image.jpg', image)
+      \end{minted}
+    \end{minipage}
+  \end{center}
+\end{frame}
+
+\begin{frame}[fragile]
+  \pdfbookmark[3]{CoA}{coa}
+  \frametitle{connascence of algorithm (CoA)}
+  \begin{center}
+    \begin{minipage}[c]{.98\textwidth}
+      \begin{minted}[bgcolor=black!10]{python}
+from werkzeug.security import generate_password_hash
+
+hashed_password = generate_password_hash(password)
+      \end{minted}
+    \end{minipage}
+    \begin{minipage}[c]{.98\textwidth}
+      \begin{minted}[bgcolor=black!10]{python}
+from werkzeug.security import check_password_hash
+
+is_correct = check_password_hash(hashed_password, user_input)
       \end{minted}
     \end{minipage}
   \end{center}
