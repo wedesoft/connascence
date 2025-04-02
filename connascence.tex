@@ -30,9 +30,13 @@
 
 \begin{document}
 
-\frame{\titlepage}
+\begin{frame}
+  \pdfbookmark[1]{connascence}{title}
+  \titlepage
+\end{frame}
 
 \begin{frame}
+  \pdfbookmark[1]{motivation}{motivation}
   \frametitle{motivation}
   \begin{itemize}
     \item metric for software design
@@ -41,6 +45,8 @@
 \end{frame}
 
 \begin{frame}
+  \pdfbookmark[1]{references}{references}
+  \pdfbookmark[2]{Jim Weirich}{weirich}
   \frametitle{talk(s) by Jim Weirich}
   \begin{center}
     \href{https://www.youtube.com/watch?v=q85rdBMe9GY}{\includegraphics[height=.8\textheight]{weirich}}
@@ -48,6 +54,7 @@
 \end{frame}
 
 \begin{frame}
+  \pdfbookmark[2]{Meilir Page-Jones}{meilir}
   \frametitle{book by Meilir Page-Jones}
   \begin{center}
     \includegraphics[height=.8\textheight]{meilir}
@@ -55,6 +62,7 @@
 \end{frame}
 
 \begin{frame}
+  \pdfbookmark[1]{definition}{definition}
   \frametitle{connascence definition}
   Jim Weirich:\bigskip\\
   \begin{quote}
@@ -63,10 +71,11 @@
 \end{frame}
 
 \begin{frame}
+  \pdfbookmark[1]{kinds of connascence}{kinds}
   \frametitle{kinds of connascence ordered by increasing strength}
   \begin{center}
     \begin{tabular}{|l|l|l|}\hline
-      & \textbf{abbreviation}  & \textbf{type} \\\hline
+      & \textbf{abbreviation}  & \textbf{kind} \\\hline
       \multirow{5}{*}{static}  & \textbf{CoN}  & Connascence of Name\\
       & \textbf{CoT}  & Connascence of Type\\
       & \textbf{CoM}  & Connascence of Meaning\\
@@ -82,12 +91,19 @@
 \end{frame}
 
 \begin{frame}[fragile]
+  \pdfbookmark[1]{examples}{examples}
+  \pdfbookmark[2]{CoN}{con}
   \frametitle{Testing}
   \begin{center}
-    \begin{minipage}[c]{.5\textwidth}
+    \begin{minipage}[c]{.35\textwidth}
       \begin{minted}[bgcolor=black!10]{python}
-def test(x):
+def sqr(x):
     return x
+      \end{minted}
+    \end{minipage}
+    \begin{minipage}[c]{.35\textwidth}
+      \begin{minted}[bgcolor=black!10]{python}
+l = sqr(x) + sqr(y)
       \end{minted}
     \end{minipage}
   \end{center}
