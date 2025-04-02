@@ -188,6 +188,22 @@ is_correct = check_password_hash(hashed_password, user_input)
   \end{center}
 \end{frame}
 
+\begin{frame}[fragile]
+  \pdfbookmark[3]{CoE}{coe}
+  \frametitle{connascence of execution (CoE)}
+  \begin{center}
+    \begin{minipage}[c]{.62\textwidth}
+      \begin{minted}[bgcolor=black!10]{python}
+email = Email()
+email.set_recipient("foo@example.comp")
+email.set_sender("me@mydomain.com")
+email.send()
+email.set_subject("Hello World")
+      \end{minted}
+    \end{minipage}
+  \end{center}
+\end{frame}
+
 % examples for different kinds of connascence
 % examples of code transformation to a kind of connascence with reduced strength
 % strength, degree, and locality (modularity)
