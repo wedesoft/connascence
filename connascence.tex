@@ -93,7 +93,7 @@
 \begin{frame}[fragile]
   \pdfbookmark[1]{examples}{examples}
   \pdfbookmark[2]{CoN}{con}
-  \frametitle{Testing}
+  \frametitle{connascence of name (CoN)}
   \begin{center}
     \begin{minipage}[c]{.35\textwidth}
       \begin{minted}[bgcolor=black!10]{python}
@@ -104,6 +104,26 @@ def sqr(x):
     \begin{minipage}[c]{.35\textwidth}
       \begin{minted}[bgcolor=black!10]{python}
 l = sqr(x) + sqr(y)
+      \end{minted}
+    \end{minipage}
+  \end{center}
+\end{frame}
+
+\begin{frame}[fragile]
+  \pdfbookmark[2]{CoM}{com}
+  \frametitle{connascence of meaning (CoM)}
+  \begin{center}
+    \begin{minipage}[c]{.5\textwidth}
+      \begin{minted}[bgcolor=black!10]{python}
+class Order:
+    def ship_order(self):
+        self.status = 2
+      \end{minted}
+    \end{minipage}
+    \begin{minipage}[c]{.5\textwidth}
+      \begin{minted}[bgcolor=black!10]{python}
+if order.status == 2:
+    print("Order was shipped.")
       \end{minted}
     \end{minipage}
   \end{center}
