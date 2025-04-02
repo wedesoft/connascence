@@ -150,7 +150,7 @@ if order.status == 2:
 \end{frame}
 
 \begin{frame}[fragile]
-  \pdfbookmark[3]{CoP}{cop}
+  \pdfbookmark[2]{CoP}{cop}
   \frametitle{connascence of position (CoP)}
   \begin{center}
     \begin{minipage}[c]{.5\textwidth}
@@ -168,7 +168,7 @@ imwrite('image.jpg', image)
 \end{frame}
 
 \begin{frame}[fragile]
-  \pdfbookmark[3]{CoA}{coa}
+  \pdfbookmark[2]{CoA}{coa}
   \frametitle{connascence of algorithm (CoA)}
   \begin{center}
     \begin{minipage}[c]{.98\textwidth}
@@ -189,7 +189,7 @@ is_correct = check_password_hash(hashed_password, user_input)
 \end{frame}
 
 \begin{frame}[fragile]
-  \pdfbookmark[3]{CoE}{coe}
+  \pdfbookmark[2]{CoE}{coe}
   \frametitle{connascence of execution (CoE)}
   \begin{center}
     \begin{minipage}[c]{.6\textwidth}
@@ -205,9 +205,9 @@ email.set_subject('Hello World')
 \end{frame}
 
 \begin{frame}
-  \pdfbookmark[3]{CoTi}{coti}
-  \pdfbookmark[3]{CoV}{cov}
-  \pdfbookmark[3]{CoI}{coi}
+  \pdfbookmark[2]{CoTi}{coti}
+  \pdfbookmark[2]{CoV}{cov}
+  \pdfbookmark[2]{CoI}{coi}
   \frametitle{other kinds of connascence}
   \begin{center}
     \begin{tabular}{|ll|p{.55\textwidth}|}\hline
@@ -218,9 +218,19 @@ email.set_subject('Hello World')
   \end{center}
 \end{frame}
 
-% examples for different kinds of connascence
+\begin{frame}
+  \pdfbookmark[1]{properties}{properties}
+  \frametitle{properties of connascence}
+  \begin{center}
+    \begin{tabular}{|l|p{.55\textwidth}|}\hline
+      \textbf{strength} & Difficulty of refactoring associated with each kind of connascence.\\\hline
+      \textbf{locality} & Closeness of the involved entities (same method, same class, same module, ...).\\\hline
+      \textbf{degree}   & Number of entities involved in an instance of connascence.\\\hline
+    \end{tabular}
+  \end{center}
+\end{frame}
+
 % examples of code transformation to a kind of connascence with reduced strength
-% strength, degree, and locality (modularity)
 
 % https://www.wedesoft.de/downloads/connascence.pdf
 
