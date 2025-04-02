@@ -10,7 +10,7 @@ connascence.pdf: connascence.tex $(IMAGES)
 	pdflatex -shell-escape $<
 
 clean:
-	rm -Rf *.pdf _minted-connascence *.aux *.log *.out
+	rm -Rf *.pdf _minted-connascence *.aux *.log *.out *.nav *.snm *.toc
 
 .svg.pdf:
 	rsvg-convert -f pdf -o $@ $<
