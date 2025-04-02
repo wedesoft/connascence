@@ -143,7 +143,7 @@ class Order:
     \begin{minipage}[c]{.5\textwidth}
       \begin{minted}[bgcolor=black!10]{python}
 if order.status == 2:
-    print("Order was shipped.")
+    print('Order was shipped.')
       \end{minted}
     \end{minipage}
   \end{center}
@@ -192,13 +192,13 @@ is_correct = check_password_hash(hashed_password, user_input)
   \pdfbookmark[3]{CoE}{coe}
   \frametitle{connascence of execution (CoE)}
   \begin{center}
-    \begin{minipage}[c]{.62\textwidth}
+    \begin{minipage}[c]{.6\textwidth}
       \begin{minted}[bgcolor=black!10]{python}
 email = Email()
-email.set_recipient("foo@example.comp")
-email.set_sender("me@mydomain.com")
+email.set_recipient('foo@example.com')
+email.set_sender('me@mydomain.com')
 email.send()
-email.set_subject("Hello World")
+email.set_subject('Hello World')
       \end{minted}
     \end{minipage}
   \end{center}
