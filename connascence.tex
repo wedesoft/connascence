@@ -4,9 +4,9 @@
 \usepackage{multirow}
 \usepackage{minted}
 
-\title{\Huge connascence}
+\title{connascence}
 \author{Jan Wedekind}
-\date{Wednesday, April 9th 2025}
+\date{Tuesday, April 29th 2025}
 
 \hypersetup{
    pdftitle          = {connascence},
@@ -226,12 +226,59 @@ email.set_subject('Hello World')
       \textbf{strength} & Difficulty of refactoring associated with each kind of connascence.\\\hline
       \textbf{locality} & Closeness of the involved entities (same method, same class, same module, ...).\\\hline
       \textbf{degree}   & Number of entities involved in an instance of connascence.\\\hline
-    \end{tabular}
+    \end{tabular}\bigskip\\
+    Strong connascence is ok if the locality is high as well.
   \end{center}
 \end{frame}
 
-% examples of code transformation to a kind of connascence with reduced strength
+\begin{frame}[fragile]
+  \pdfbookmark[1]{transformation}{transformation}
+  \frametitle{CoM to CoN transformation}
+  \begin{center}
+    \begin{minipage}[c]{.42\textwidth}
+      \begin{minted}[bgcolor=black!10,fontsize=\footnotesize]{python}
+class Order:
+    def ship_order(self):
+        self.status = 2
+      \end{minted}
+      \begin{minted}[bgcolor=black!10,fontsize=\footnotesize]{python}
+if order.status == 2:
+    print('Order was shipped.')
+      \end{minted}
+    \end{minipage}
+    \begin{minipage}[c]{.03\textwidth}
+    \begin{large}
+      $\Rightarrow$
+    \end{large}
+    \end{minipage}
+    \begin{minipage}[c]{.53\textwidth}
+      \begin{minted}[bgcolor=black!10,fontsize=\footnotesize]{python}
+from enum import Enum
 
-% https://www.wedesoft.de/downloads/connascence.pdf
+class Status(Enum):
+    NEW = 1
+    SHIPPED = 2
+
+class Order:
+    def ship_order(self):
+        self.status = Status.SHIPPED
+      \end{minted}
+      \begin{minted}[bgcolor=black!10,fontsize=\footnotesize]{python}
+if order.status == Status.SHIPPED:
+    print('Order was shipped.')
+      \end{minted}
+    \end{minipage}\medskip\\
+    Transforming strong kind of connascence to weaker kind.
+  \end{center}
+\end{frame}
+
+\begin{frame}
+  \pdfbookmark[1]{questions}{questions}
+  \begin{center}
+    \begin{huge}
+      Thanks for listening!
+    \end{huge}
+  \end{center}
+\end{frame}
 
 \end{document}
