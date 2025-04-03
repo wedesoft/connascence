@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="30.304338mm"
+   height="84.481285mm"
+   viewBox="0 0 30.304338 84.481285"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   sodipodi:docname="arrow.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="true"
+     inkscape:zoom="0.79909512"
+     inkscape:cx="44.425249"
+     inkscape:cy="-26.905433"
+     inkscape:window-width="1920"
+     inkscape:window-height="1056"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid1049"
+       originx="-37.721944"
+       originy="-36.813145" />
+  </sodipodi:namedview>
+  <defs
+     id="defs2">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient1669">
+      <stop
+         style="stop-color:#25f500;stop-opacity:1;"
+         offset="0"
+         id="stop1665" />
+      <stop
+         style="stop-color:#f4fa03;stop-opacity:1;"
+         offset="0.5"
+         id="stop3253" />
+      <stop
+         style="stop-color:#ff0707;stop-opacity:1;"
+         offset="1"
+         id="stop1667" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient1669"
+       id="linearGradient1671"
+       x1="53.297539"
+       y1="37.216957"
+       x2="53.40255"
+       y2="120.57467"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-37.721944,-36.813146)">
+    <path
+       style="fill:url(#linearGradient1671);fill-opacity:1;stroke:#000000;stroke-width:0.265;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+       d="m 47.544418,36.947064 10.072552,0.107694 0.491504,68.576532 9.612373,0.28214 -14.802096,15.19046 -14.867797,-15.47394 9.21268,0.51728 z"
+       id="path1520" />
+    <text
+       xml:space="preserve"
+       style="font-size:8.46666667px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="14.281282"
+       y="81.602943"
+       id="text794"><tspan
+         sodipodi:role="line"
+         id="tspan792"
+         style="stroke-width:0.264583;font-size:8.46666667px"></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:6.35px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="-85.801338"
+       y="45.049259"
+       id="text798"
+       transform="rotate(-90)"><tspan
+         sodipodi:role="line"
+         id="tspan796"
+         style="stroke-width:0.264583"
+         x="-85.801338"
+         y="45.049259">Strength</tspan></text>
+  </g>
+</svg>
