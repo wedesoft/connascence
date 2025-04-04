@@ -1,8 +1,9 @@
+connascence.pdf
 _minted-opengl
 *.aux
 *.log
 *.out
-*.pdf
 *.nav
 *.snm
 *.toc
+*.vrb
