@@ -237,8 +237,9 @@ email.set_subject('Hello World')
 \end{frame}
 
 \begin{frame}[fragile]
-  \pdfbookmark[1]{transformation}{transformation}
-  \frametitle{CoM to CoN transformation}
+  \pdfbookmark[1]{transformation examples}{transformation}
+  \pdfbookmark[2]{CoM to CoN}{comtocon}
+  \frametitle{example: CoM to CoN transformation}
   \begin{center}
     \begin{minipage}[c]{.42\textwidth}
       \begin{minted}[bgcolor=black!10,fontsize=\footnotesize]{python}
@@ -252,9 +253,9 @@ if order.status == 2:
       \end{minted}
     \end{minipage}
     \begin{minipage}[c]{.03\textwidth}
-    \begin{large}
-      $\Rightarrow$
-    \end{large}
+      \begin{large}
+        $\Rightarrow$
+      \end{large}
     \end{minipage}
     \begin{minipage}[c]{.53\textwidth}
       \begin{minted}[bgcolor=black!10,fontsize=\footnotesize]{python}
@@ -275,6 +276,35 @@ if order.status == Status.SHIPPED:
     \end{minipage}\medskip\\
     Transforming strong kind of connascence to weaker kind.
   \end{center}
+\end{frame}
+
+\begin{frame}[fragile]
+  \pdfbookmark[2]{CoE to CoP}{coetocop}
+  \frametitle{example: CoE to CoP transformation}
+  \begin{center}
+    \begin{minipage}[c]{.512\textwidth}
+      \begin{minted}[bgcolor=black!10,fontsize=\footnotesize]{python}
+email = Email()
+email.set_recipient('foo@example.com')
+email.set_sender('me@mydomain.com')
+email.send()
+email.set_subject('Hello World')
+        \end{minted}
+      \end{minipage}
+      \begin{minipage}[c]{.03\textwidth}
+        \begin{large}
+          $\Rightarrow$
+        \end{large}
+      \end{minipage}
+      \begin{minipage}[c]{.428\textwidth}
+        \begin{minted}[bgcolor=black!10,fontsize=\footnotesize]{python}
+email = Email('foo@example.com',
+              'me@mydomain.com',
+              'Hello World')
+email.send()
+        \end{minted}
+      \end{minipage}
+    \end{center}
 \end{frame}
 
 \begin{frame}
