@@ -8,6 +8,7 @@ all: connascence.pdf
 
 connascence.pdf: connascence.tex $(IMAGES)
 	pdflatex -shell-escape $<
+	pdflatex -shell-escape $<
 
 clean:
 	rm -Rf connascence.pdf _minted-connascence *.aux *.log *.out *.nav *.snm *.toc *.vrb
